@@ -1,0 +1,13 @@
+<h1>Name: {{name}}</h1>
+<h1>Num: {{contact}}</h1>
+
+<h1>First Name: {{profile.name.fname}}</h1>
+<h1>Last Name: {{profile.name.lname}}</h1>
+<h1>Age: {{profile.age}}</h1>
+
+<button [disabled]="isDisabledTrue">Button</button>
+<mat-card>
+     <mat-card-actions>
+       <button mat-button [disabled]="isLikeDisabled" (click)="onLike()">LIKE</button>
+     </mat-card-actions>
+   </mat-card>

@@ -1,0 +1,17 @@
+<div>
+    <h2>User List</h2>
+    <table class="tbl-border">
+        <thead>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usr of user">
+                <td *ngIf="usr.age > 20">{{usr.username}}</td>
+                <td *ngIf="usr.age > 20">{{usr.address}}</td>
+                <td *ngIf="usr.age > 20">{{usr.age}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

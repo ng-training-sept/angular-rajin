@@ -1,0 +1,8 @@
+<!-- To way binding for username -->
+
+<input matInput [(ngModel)]="username">
+
+<p>Two way binded data: {{username}}</p>
+
+<button [disabled]="validName()" (click)="reset()" [(ngModel)]="style" [style]="style">Reset</button>
+

@@ -7,11 +7,14 @@
             <th>Age</th>
         </thead>
         <tbody>
-            <tr *ngFor="let usr of user">
-                <td *ngIf="usr.age > 20">{{usr.username}}</td>
-                <td *ngIf="usr.age > 20">{{usr.address}}</td>
-                <td *ngIf="usr.age > 20">{{usr.age}}</td>
-            </tr>
+            <ng-container *ngFor="let usr of user">
+                <tr *ngIf="usr.age > 20">
+                    <td>{{usr.username}}</td>
+                    <td>{{usr.address}}</td>`
+                    <td>{{usr.age}}</td>
+                </tr>
+            </ng-container>
+            
         </tbody>
     </table>
 </div>

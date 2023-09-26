@@ -1,46 +1,17 @@
-<!-- <h1>Name: {{name}}</h1>
-<h1>Num: {{contact}}</h1>
-
-<h1>First Name: {{profile.name.fname}}</h1>
-<h1>Last Name: {{profile.name.lname}}</h1>
-<h1>Age: {{profile.age}}</h1> -->
-
-<!-- <button [disabled]="isDisabledTrue">Button</button> -->
-<!-- <mat-card>
-     <mat-card-actions>
-       <button mat-button (click)="onLike()">LIKE {{count}}</button>
-     </mat-card-actions>
-   </mat-card> -->
-
-
-
-   <!-- <mat-card class="card">
-    <mat-card-header>
-      <mat-card-title>{{title}}</mat-card-title>
-      <mat-card-subtitle>{{likeCount}} Likes</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image [src]="imageUrl" alt="shiba">
-    <mat-card-content>
-      <p>I am {{'running'}} on port {{port}}</p>
-      <p [style.fontSize]="size">Server with Id {{server.id}} is {{server.status}}</p>
-      <p [style]="style">Server status from method: {{getServerStatus()}}</p>
-      <mat-form-field appearance="fill">
-        <mat-label>Title</mat-label>
-        <input matInput [(ngModel)]="title">
-      </mat-form-field>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button [disabled]="isLikeDisabled" (click)="onLike()">LIKE</button>
-      <button mat-button [disabled]="isShareDisabled">SHARE</button>
-    </mat-card-actions>
-  </mat-card> -->
-
-  <!-- <mat-card class="card">
-    <mat-card-header>
-
-      <mat-card-subtitle *ngIf="likeCount">{{likeCount}} Likes</mat-card-subtitle>
-    </mat-card-header>
-
-  </mat-card> -->
-
-  <h1 special>I am purple </h1>
+  <!-- Sharing data between child and parent components -->
+  
+  <div class="card-container">
+    <mat-card class="card" *ngFor="let cardTitle of titles">
+      <mat-card-header>
+        <mat-card-title>{{cardTitle}}</mat-card-title>
+        <mat-card-subtitle>{{cardTitle}}</mat-card-subtitle>
+        <button mat-raised-button class="delete-button" (click)="onDeleteCard(cardTitle)">Delete</button>
+      </mat-card-header>
+    </mat-card>
+    <mat-form-field appearance="fill">
+      <mat-label>Title</mat-label>
+      <input type="text" matInput #inputTitle>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="onAddCard(inputTitle.value)">Add Card</button>
+    
+  </div>

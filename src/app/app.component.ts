@@ -17,5 +17,10 @@ import { TableComponent } from './components/table/table.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-class';
+  cardsTitle: string[] = ['Maia', 'Dylan', 'Minoru', 'Amarachi', 'Ceallagh'];
+
+  addCard(title:string){
+    this.cardsTitle.push(title);
+    console.log(this.cardsTitle);
+  }
 }

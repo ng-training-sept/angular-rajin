@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
 
+## To install Angular CLI
+    npm install -g @angular/cli
+
+## To create new project
+    npx @angular/cli@latest new project-name --standalone
+
+## To add Angular Material
+    npx ng add @angular/material
+
+## To create new component
+    npx ng g c components/card --skip-tests=true
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

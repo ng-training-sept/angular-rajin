@@ -13,6 +13,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## To create new component
     npx ng g c components/card --skip-tests=true
+
+## To run project
+    npx ng serve
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

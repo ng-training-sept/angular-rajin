@@ -8,7 +8,9 @@ export const routes: Routes = [
   //{path: 'sports', component: SportsComponent}, // Eagerly loading route
 
   { path: 'sports', loadComponent: () => import('./forms/sports/sports.component').then(m => m.SportsComponent) }, // Lazily loading route
-  { path: 'sports/card-item/:id', component: CardItemComponent}
+  { path: 'sports/card-item/:id', component: CardItemComponent},
+  { path: 'grocery', loadComponent:() => import('./forms/grocery/grocery.component').then(m => m.GroceryComponent) },
+  { path: 'grocery/card-item/:id', component: CardItemComponent},
 ];
 
 export const appConfig: ApplicationConfig = {

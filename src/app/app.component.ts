@@ -4,6 +4,7 @@ import { CardComponent } from './components/card/card.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SportsComponent } from './forms/sports/sports.component';
 import { RouterOutlet } from '@angular/router';
+import { GroceryComponent } from './forms/grocery/grocery.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { RouterOutlet } from '@angular/router';
     CardComponent,
     HeaderComponent,
     SportsComponent,
-    RouterOutlet
+    RouterOutlet,
+    GroceryComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

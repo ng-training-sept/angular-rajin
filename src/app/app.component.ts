@@ -5,6 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SportsComponent } from './forms/sports/sports.component';
 import { RouterOutlet } from '@angular/router';
 import { GroceryComponent } from './forms/grocery/grocery.component';
+import { HomeComponent } from './forms/home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { GroceryComponent } from './forms/grocery/grocery.component';
     HeaderComponent,
     SportsComponent,
     RouterOutlet,
-    GroceryComponent
+    GroceryComponent,
+    HomeComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

@@ -1,0 +1,18 @@
+img{
+    height: 200px;
+    width: 175px;
+}
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    max-width: 400px;
+    margin: 5px;
+  }
+  
+  mat-card-title{
+    color: black;
+  }
